@@ -11,5 +11,5 @@ push_registry_passwd="heatonli12345"
 
 docker pull ${pull_registry}/${image}
 docker tag ${pull_registry}/${image}  ${push_registry}/${image}
-docker login ${push_registry} -u ${push_registry_user} -p {push_registry_passwd};
+docker login ${push_registry} -u ${push_registry_user} -p ${push_registry_passwd};
 docker push ${push_registry}/${image}
